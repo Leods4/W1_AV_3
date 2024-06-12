@@ -10,12 +10,16 @@
             font-family: 'Lato', sans-serif;
             background-color: #f4f4f4;
             color: #333;
+            position: relative; 
+            overflow-x: hidden;
         }
         nav {
             background-color: #003366;
             color: white;
             padding: 15px;
             text-align: center;
+            position: relative; 
+            z-index: 2;
         }
         nav a {
             color: white;
@@ -27,23 +31,31 @@
         nav a:hover {
             color: #ffcc00;
         }
+        .logo {
+            background: url('logo.png') no-repeat center center;
+            background-size: 50%;
+            height: 200px; 
+            position: relative;
+            z-index: 1; 
+        }
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 90vh;
-            background: url('pngegg.png') no-repeat center center;
-            background-size: 65%;
-            color: white;
-            text-shadow: 2px 2px 4px #000;
+            height: 50vh;
+            position: relative; 
+            z-index: 1; 
         }
         .content {
             text-align: center;
-            background-color: rgba(0, 51, 102, 0.6);
+            background-color: rgba(0, 0, 0, 0.1);
             padding: 20px;
             border-radius: 10px;
             max-width: 600px;
             margin: 0 auto;
+            color: rgb(0, 0, 0); 
+            position: relative;
+            z-index: 1; 
         }
         .content h1 {
             font-size: 3em;
@@ -64,6 +76,8 @@
             margin-left: auto;
             margin-right: auto;
             text-align: center;
+            position: relative; 
+            z-index: 1;
         }
         .features h2 {
             font-size: 2em;
@@ -90,6 +104,7 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+            z-index: 2;
         }
         footer p {
             margin: 0;
@@ -100,9 +115,11 @@
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="https://leods4.github.io/W1_Cur_Av3/">Contato</a>
+        <a href="https://leods4.github.io/W1_Cur_Pes/">Contato</a>
         <a href="sobre.html">Sobre</a>
     </nav>
+
+    <div class="logo"></div>
 
     <div class="container">
         <div class="content">
